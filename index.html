@@ -67,14 +67,33 @@ textarea.note:focus { border-color: #3a6ea8; }
 .btn-primary { background: #1a3a5c; color: #fff; border-color: #1a3a5c; }
 .btn:active { opacity: 0.8; }
 @media print {
-  @page { size: A4 portrait; margin: 10mm; }
-  html, body { width: 210mm; margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  @page { size: A4 portrait; margin: 6mm; }
+  html, body { width: 210mm; margin: 0 !important; padding: 0 !important; background: #fff !important; font-size: 11px !important; }
   .actions, .add-btn, .del-btn { display: none !important; }
   .card { box-shadow: none !important; border-radius: 0 !important; width: 100% !important; max-width: 100% !important; }
-  .body { padding: 8mm 10mm !important; }
-  .stripe { padding: 6mm 10mm !important; }
+  .stripe { padding: 4mm 6mm !important; }
+  .stripe h1 { font-size: 13px !important; }
+  .body { padding: 4mm 6mm !important; }
+  .dates { gap: 4px !important; margin-bottom: 6px !important; padding-bottom: 6px !important; }
+  .parties { gap: 6px !important; margin-bottom: 6px !important; }
+  .party { padding: 6px 8px !important; }
+  .party-name { font-size: 11px !important; }
+  .party-detail { font-size: 10px !important; }
+  input.f, select.f, input.pi { font-size: 11px !important; padding: 3px 5px !important; }
+  .sec-lbl { margin-bottom: 4px !important; }
+  .item { padding: 6px 8px !important; margin-bottom: 5px !important; }
+  .item textarea { font-size: 11px !important; min-height: 30px !important; padding: 4px 6px !important; margin-bottom: 4px !important; }
+  .item-field input { font-size: 11px !important; padding: 3px 5px !important; width: 65px !important; }
+  .item-total-val { font-size: 12px !important; }
+  .total-box { padding: 8px 10px !important; margin-bottom: 6px !important; }
+  .total-box span { font-size: 12px !important; }
+  .bank { padding: 6px 8px !important; margin-bottom: 6px !important; }
+  .bv { font-size: 10px !important; }
+  textarea.note { font-size: 11px !important; min-height: 30px !important; padding: 4px 6px !important; margin-bottom: 6px !important; }
+  .stamp-wrap img { width: 100px !important; height: 100px !important; }
+  .stamp-wrap { margin-bottom: 4px !important; padding-right: 2mm !important; }
+  .footer { padding: 4px 6mm !important; font-size: 9px !important; }
   .item { break-inside: avoid; }
-  input, textarea, select { border-color: #ccc !important; }
   * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
 }
 </style>
